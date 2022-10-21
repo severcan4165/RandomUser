@@ -34,20 +34,20 @@ console.log(getData);
   return (
 
   <Container className="mt-5 w-50 bg-info p-3 rounded-4">
-    <Container>
+    <Container className=" p-5 ">
         <div className="d-flex  my-4">
            <img className="me-5" src={picture?.large} alt="" width="200px" style={{borderRadius:"0.8rem"}}/>
            <h1 className="display-4">{name?.title} {name?.first} {name?.last}</h1>
         </div>
-        <div className="d-flex  my-4">
+        <div className="d-flex  justify-content-between my-4">
           <img className="me-5" src={emailSvg} alt="" width="70px"/>
           <p className="display-6">{email}</p>
         </div>
-        <div className="d-flex  my-4">
+        <div className="d-flex justify-content-between  my-4">
           <img className="me-5" src={phoneSvg} alt="" width="70px"/>
           <p className="display-6">{phone}</p>
         </div>
-        <div className="d-flex  my-4">
+        <div className="d-flex justify-content-between  my-4">
           <img className="me-5" src={locationSvg} alt="" width="70px"/>
           <p className="display-6">{location?.city}</p>
         </div>
